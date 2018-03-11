@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "NEIE Assistant",
+  "description": "This extension helps you finish NEIE web homework.",
+  "version": "0.1",
+  "browser_action": {
+    "default_icon": "img/icon.png",
+    "default_popup": "html/state.html",
+    "default_title": "Click to view state"
+  },
+  "options_page": "html/options.html",
+  "background": {
+    "page": "html/learner.html"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "http://*/"
+  ]
+}

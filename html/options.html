@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NEIE Assistant</title>
+    <link rel="stylesheet" href="../css/pure-min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<div class="container">
+    <h1>NEIE Assistant Options</h1>
+    <div class="pure-form pure-form-aligned">
+        <div class="pure-control-group">
+            <label for="server">Server Address</label>
+            <input id="server" type="text" class="pure-input-1-2" required>
+        </div>
+        <div class="pure-control-group">
+            <label for="userName">Username</label>
+            <input id="userName" type="text" class="pure-input-1-2" required>
+        </div>
+        <div class="pure-control-group">
+            <label for="password">Password</label>
+            <input id="password" type="password" class="pure-input-1-2" required>
+        </div>
+        <div class="pure-control-group">
+            <label for="type">Type</label>
+            <select id="type">
+                <option>RWT</option>
+                <option>VLS</option>
+            </select>
+        </div>
+        <div class="pure-control-group">
+            <label for="level">Level</label>
+            <select id="level">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <div class="pure-control-group">
+            <label for="end">End unit</label>
+            <input id="end" type="text" class="pure-input-1-2">
+        </div>
+        <div class="pure-control-group">
+            <label for="maxTime">Max time per section</label>
+            <input id="maxTime" type="number" class="pure-input-1-2" required>
+        </div>
+        <div class="pure-control-group">
+            <label for="minTime">Max time per section</label>
+            <input id="minTime" type="number" class="pure-input-1-2" required>
+        </div>
+        <div class="pure-control-group">
+            <label for="maxScore">Max score</label>
+            <input id="maxScore" type="number" class="pure-input-1-2" required>
+        </div>
+        <div class="pure-control-group">
+            <label for="minScore">Min score</label>
+            <input id="minScore" type="number" class="pure-input-1-2" required>
+        </div>
+        <hr>
+        <div class="pure-control-group">
+            <label for="needActivation">Help me activate</label>
+            <input id="needActivation" type="checkbox" required>
+        </div>
+        <div class="pure-control-group">
+            <label for="serialNumber">Serial Number</label>
+            <input id="serialNumber" type="text" class="pure-input-1-2" disabled>
+        </div>
+        <div class="pure-control-group">
+            <label for="licenseNumber">License Number</label>
+            <input id="licenseNumber" type="text" class="pure-input-1-2" disabled>
+        </div>
+        <div class="pure-control-group">
+            <label for="activationCode">Activation Code</label>
+            <input id="activationCode" type="text" class="pure-input-1-2" disabled>
+        </div>
+
+
+        <div class="pure-button pure-button-primary" id="save">Save Options</div>
+        <div id="saveState"></div>
+    </div>
+</div>
+
+<script src="../js/options.js"></script>
+</body>
+</html>
